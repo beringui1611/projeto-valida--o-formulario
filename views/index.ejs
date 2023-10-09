@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validação</title>
+</head>
+<body>
+    <form method="post" action="/form">
+        <input type="text" name="email" id="email" placeholder="email" value="<%= email %>">
+        <%= emailError %>
+        <br>
+        <input type="text" name="nome" id="nome" placeholder="nome">
+        <%= nomeError %>
+        <br>
+        <input type="number" name="pontos" id="pontos" placeholder="pontos">
+        <%= pontosError %>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
